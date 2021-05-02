@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн чат</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"
+    integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU"
+    crossorigin="anonymous"></script>
+  <script src="js/chat.js" defer></script>
+</head>
+
+<body>
+  <h1 class="title">Онлайн чат</h1>
+  <p class="desc">Онлайн веб чат, сделанный на Node.js, Socket.io</p>
+
+  <div class="chat">
+    <div class="wrapper">
+      <div class="chat-title">
+        <h2>Онлайн чат</h2>
+      </div>
+      <div class="data">
+        <ul id="msgList">
+          <li><b>Тестер: </b> Привет всем!</li>
+        </ul>
+        <div class="down">
+          <input type="text" id="nameInp" placeholder="Ваше имя">
+          <input type="text" id="msgInp" placeholder="Сообщение">
+          <button id="sendMsgBtn">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

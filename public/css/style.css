@@ -1,0 +1,97 @@
+@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:100,200,300,regular,500,600,700,800,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic);
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'JetBrains Mono', sans-serif;
+	box-sizing: border-box;
+	outline: none;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	height: 100vh;
+	color: #333;
+	background: #fafafa;
+}
+
+body .title {
+	font-size: 40px;
+}
+
+body .desc {
+	opacity: 0.8;
+}
+
+.chat {
+	position: fixed;
+	bottom: 0;
+	right: 50px;
+	width: 350px;
+	height: 450px;
+	background: #fff;
+	border: 1px solid #bfbfbf;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	transform: translateY(90%);
+	transition: 0.5s;
+}
+
+.chat .wrapper {
+	height: 100%;
+}
+
+.chat:hover {
+	transform: translateY(0);
+}
+
+.chat .chat-title {
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	background: green;
+	color: #fff;
+	padding: 12px;
+	font-size: 13px;
+	height: 46px;
+}
+
+.chat .data {
+	padding: 12px;
+	height: calc(100% - 46px);
+}
+
+.chat #msgList {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	overflow-y: auto;
+	height: 65%;
+}
+
+.chat .down {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+input {
+	padding: 5px 10px;
+	border-radius: 10px;
+	border: 1px solid #bfbfbf;
+	font-size: 16px;
+}
+
+button {
+	padding: 10px;
+	font-size: 16px;
+	border-radius: 6px;
+	background: green;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+}
